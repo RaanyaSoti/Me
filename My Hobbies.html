@@ -1,0 +1,185 @@
+<html>
+<head>
+<title>
+Me | Hobbies
+</title>
+</head>
+
+<style>
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 25px;
+  font-family: IMPACT;
+  border: none;
+  outline: none;
+  background-color: #569;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+body {
+  font-size: 28px;
+  font color:"white";
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #456;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "IMPACT";
+}
+
+li a:hover {
+  background-color: #245;
+}
+
+.active {
+  background-color: #569;
+}
+
+#myBtn:hover {
+  background-color:#245;
+}
+
+</style>
+</head>
+<body>
+
+    
+<ul>
+  <li><a href="Index.html">Home</a></li>
+  <li><a href="My Achievements.html">Achievements</a></li>
+  <li><a class="active" href="My Hobbies.html">Hobbies</a></li>
+  <li><a href="My Art Page.html">Art Page</a></li>
+  <li><a href="My Music.html">Music</a></li>
+  <li><a href="Manipur.html">Manipur</a></li>
+</ul><br>
+</body>
+
+<body bgcolor="#003153"></body>
+<!--Prussian Blue #003153-->
+
+<style>
+    body{
+	font-size:"5";
+	color:"white"
+	font-family:"IMPACT";
+	text-align:"center";
+    }
+ 
+   img {
+        border: 7px solid transparent;
+	border-radius: 10px;
+}
+
+
+body {margin:42px;}
+
+div.polaroid {
+  width: 30%;
+  background-color: white;
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 5px 15px;
+  font-family: "BankGothic Md Bt"
+}
+
+</style>
+
+<body>
+<font size="7" font color="white" face="IMPACT">
+<center>My Hobbies</center>
+</font><br>
+
+<center>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button>
+
+<script>
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 80px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+<div class="polaroid">
+  <img src="Painting.jpg" alt="5 Terre" style="width:90%">
+  <div class="container">
+  <p>Painting</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="Dancing.jpg" alt="5 Terre" style="width:90%">
+  <div class="container">
+  <p>Dancing</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="Baking.jpg" alt="5 Terre" style="width:90%">
+  <div class="container">
+  <p>Baking</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="Cooking.jpg" alt="5 Terre" style="width:90%">
+  <div class="container">
+  <p>Cooking</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="Ukelele.jpg" alt="5 Terre" style="width:90%">
+  <div class="container">
+  <p>Playing my Ukulele</p>
+  </div>
+</div>
+
+</center>
+</html>
